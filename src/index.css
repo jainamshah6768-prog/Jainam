@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", Georgia, Cambria, "Times New Roman", serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    background-color: #FFFFFF;
+    color: #4A152E;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+
+  button, a, input, select, textarea {
+    outline-color: #DB2777;
+  }
+}
+
+/* Patisserie Pink & White Decorative Surface Patterns */
+.bg-patisserie-awning {
+  background-image: repeating-linear-gradient(
+    90deg,
+    #F472B6 0px,
+    #F472B6 22px,
+    #FFFFFF 22px,
+    #FFFFFF 44px
+  );
+}
+
+.bg-pink-polka {
+  background-color: #FFF0F6;
+  background-image: radial-gradient(#F9A8D4 1.25px, transparent 1.25px);
+  background-size: 22px 22px;
+}
+
+.bg-pink-lace-grid {
+  background-color: #FCE7F3;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.55) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.55) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

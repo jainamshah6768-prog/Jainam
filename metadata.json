@@ -1,0 +1,6 @@
+{
+  "name": "Jain Oven Pack",
+  "description": "100% eggless, pure vegetarian artisanal bakery and curated oven packs baked fresh daily.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
